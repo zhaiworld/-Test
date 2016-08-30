@@ -11,6 +11,11 @@
 		C2D1E0201D75814F0019F736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E01F1D75814F0019F736 /* AppDelegate.m */; };
 		C2D1E0281D75814F0019F736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D1E0271D75814F0019F736 /* Assets.xcassets */; };
 		C2D1E0361D7581500019F736 /* __TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0351D7581500019F736 /* __TestTests.m */; };
+		C2D1E05D1D758E190019F736 /* ZWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0501D758E190019F736 /* ZWTabBarController.m */; };
+		C2D1E0601D759F570019F736 /* ZWDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E05F1D759F570019F736 /* ZWDiscoverController.m */; };
+		C2D1E0631D759F8C0019F736 /* ZWHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0621D759F8C0019F736 /* ZWHomeController.m */; };
+		C2D1E0661D759FC60019F736 /* ZWMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0651D759FC60019F736 /* ZWMessageController.m */; };
+		C2D1E0691D759FE10019F736 /* ZWProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0681D759FE10019F736 /* ZWProfileController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,16 @@
 		C2D1E0311D7581500019F736 /* 微博TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微博TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D1E0351D7581500019F736 /* __TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __TestTests.m; sourceTree = "<group>"; };
 		C2D1E0371D7581500019F736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D1E04F1D758E190019F736 /* ZWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTabBarController.h; sourceTree = "<group>"; };
+		C2D1E0501D758E190019F736 /* ZWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTabBarController.m; sourceTree = "<group>"; };
+		C2D1E05E1D759F570019F736 /* ZWDiscoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWDiscoverController.h; path = "微博Test/Classes/Discover(发现)/ZWDiscoverController.h"; sourceTree = SOURCE_ROOT; };
+		C2D1E05F1D759F570019F736 /* ZWDiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWDiscoverController.m; path = "微博Test/Classes/Discover(发现)/ZWDiscoverController.m"; sourceTree = SOURCE_ROOT; };
+		C2D1E0611D759F8C0019F736 /* ZWHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWHomeController.h; sourceTree = "<group>"; };
+		C2D1E0621D759F8C0019F736 /* ZWHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWHomeController.m; sourceTree = "<group>"; };
+		C2D1E0641D759FC60019F736 /* ZWMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWMessageController.h; sourceTree = "<group>"; };
+		C2D1E0651D759FC60019F736 /* ZWMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWMessageController.m; sourceTree = "<group>"; };
+		C2D1E0671D759FE10019F736 /* ZWProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWProfileController.h; sourceTree = "<group>"; };
+		C2D1E0681D759FE10019F736 /* ZWProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWProfileController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +89,7 @@
 		C2D1E01A1D75814F0019F736 /* 微博Test */ = {
 			isa = PBXGroup;
 			children = (
+				C2D1E0431D758E190019F736 /* Classes */,
 				C2D1E01E1D75814F0019F736 /* AppDelegate.h */,
 				C2D1E01F1D75814F0019F736 /* AppDelegate.m */,
 				C2D1E0271D75814F0019F736 /* Assets.xcassets */,
@@ -98,6 +114,207 @@
 				C2D1E0371D7581500019F736 /* Info.plist */,
 			);
 			path = "微博TestTests";
+			sourceTree = "<group>";
+		};
+		C2D1E0431D758E190019F736 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0441D758E190019F736 /* Discover(发现) */,
+				C2D1E0481D758E190019F736 /* Home(首页) */,
+				C2D1E04C1D758E190019F736 /* Main(主要) */,
+				C2D1E0551D758E190019F736 /* Message(消息) */,
+				C2D1E0591D758E190019F736 /* Profile(我) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C2D1E0441D758E190019F736 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0451D758E190019F736 /* Controller */,
+				C2D1E0461D758E190019F736 /* Model */,
+				C2D1E0471D758E190019F736 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		C2D1E0451D758E190019F736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E05E1D759F570019F736 /* ZWDiscoverController.h */,
+				C2D1E05F1D759F570019F736 /* ZWDiscoverController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2D1E0461D758E190019F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D1E0471D758E190019F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2D1E0481D758E190019F736 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0491D758E190019F736 /* Controller */,
+				C2D1E04A1D758E190019F736 /* Model */,
+				C2D1E04B1D758E190019F736 /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		C2D1E0491D758E190019F736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0611D759F8C0019F736 /* ZWHomeController.h */,
+				C2D1E0621D759F8C0019F736 /* ZWHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2D1E04A1D758E190019F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D1E04B1D758E190019F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2D1E04C1D758E190019F736 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E04D1D758E190019F736 /* Category */,
+				C2D1E04E1D758E190019F736 /* Controller */,
+				C2D1E0511D758E190019F736 /* Lib */,
+				C2D1E0521D758E190019F736 /* Model */,
+				C2D1E0531D758E190019F736 /* Other */,
+				C2D1E0541D758E190019F736 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		C2D1E04D1D758E190019F736 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C2D1E04E1D758E190019F736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E04F1D758E190019F736 /* ZWTabBarController.h */,
+				C2D1E0501D758E190019F736 /* ZWTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2D1E0511D758E190019F736 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		C2D1E0521D758E190019F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D1E0531D758E190019F736 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C2D1E0541D758E190019F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2D1E0551D758E190019F736 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0561D758E190019F736 /* Controller */,
+				C2D1E0571D758E190019F736 /* Model */,
+				C2D1E0581D758E190019F736 /* View */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		C2D1E0561D758E190019F736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0641D759FC60019F736 /* ZWMessageController.h */,
+				C2D1E0651D759FC60019F736 /* ZWMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2D1E0571D758E190019F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D1E0581D758E190019F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2D1E0591D758E190019F736 /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E05A1D758E190019F736 /* Controller */,
+				C2D1E05B1D758E190019F736 /* Model */,
+				C2D1E05C1D758E190019F736 /* View */,
+			);
+			path = "Profile(我)";
+			sourceTree = "<group>";
+		};
+		C2D1E05A1D758E190019F736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2D1E0671D759FE10019F736 /* ZWProfileController.h */,
+				C2D1E0681D759FE10019F736 /* ZWProfileController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2D1E05B1D758E190019F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2D1E05C1D758E190019F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D1E05D1D758E190019F736 /* ZWTabBarController.m in Sources */,
+				C2D1E0601D759F570019F736 /* ZWDiscoverController.m in Sources */,
 				C2D1E0201D75814F0019F736 /* AppDelegate.m in Sources */,
 				C2D1E01D1D75814F0019F736 /* main.m in Sources */,
+				C2D1E0691D759FE10019F736 /* ZWProfileController.m in Sources */,
+				C2D1E0661D759FC60019F736 /* ZWMessageController.m in Sources */,
+				C2D1E0631D759F8C0019F736 /* ZWHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

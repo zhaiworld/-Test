@@ -16,6 +16,13 @@
 		C2D1E0631D759F8C0019F736 /* ZWHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0621D759F8C0019F736 /* ZWHomeController.m */; };
 		C2D1E0661D759FC60019F736 /* ZWMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0651D759FC60019F736 /* ZWMessageController.m */; };
 		C2D1E0691D759FE10019F736 /* ZWProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0681D759FE10019F736 /* ZWProfileController.m */; };
+		C2D1E06C1D75A72A0019F736 /* ZWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E06B1D75A72A0019F736 /* ZWNavigationController.m */; };
+		C2D1E0701D75A9380019F736 /* ZWTestOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E06E1D75A9380019F736 /* ZWTestOneController.m */; };
+		C2D1E0711D75A9380019F736 /* ZWTestOneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2D1E06F1D75A9380019F736 /* ZWTestOneController.xib */; };
+		C2D1E0751D75AA670019F736 /* ZWTestTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0731D75AA670019F736 /* ZWTestTwoController.m */; };
+		C2D1E0761D75AA670019F736 /* ZWTestTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2D1E0741D75AA670019F736 /* ZWTestTwoController.xib */; };
+		C2D1E0791D75AE500019F736 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0781D75AE500019F736 /* UIView+Category.m */; };
+		C2D1E07C1D75B0E50019F736 /* UIBarButtonItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,18 @@
 		C2D1E0651D759FC60019F736 /* ZWMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWMessageController.m; sourceTree = "<group>"; };
 		C2D1E0671D759FE10019F736 /* ZWProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWProfileController.h; sourceTree = "<group>"; };
 		C2D1E0681D759FE10019F736 /* ZWProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWProfileController.m; sourceTree = "<group>"; };
+		C2D1E06A1D75A72A0019F736 /* ZWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWNavigationController.h; sourceTree = "<group>"; };
+		C2D1E06B1D75A72A0019F736 /* ZWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWNavigationController.m; sourceTree = "<group>"; };
+		C2D1E06D1D75A9380019F736 /* ZWTestOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTestOneController.h; sourceTree = "<group>"; };
+		C2D1E06E1D75A9380019F736 /* ZWTestOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTestOneController.m; sourceTree = "<group>"; };
+		C2D1E06F1D75A9380019F736 /* ZWTestOneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWTestOneController.xib; sourceTree = "<group>"; };
+		C2D1E0721D75AA670019F736 /* ZWTestTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTestTwoController.h; sourceTree = "<group>"; };
+		C2D1E0731D75AA670019F736 /* ZWTestTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTestTwoController.m; sourceTree = "<group>"; };
+		C2D1E0741D75AA670019F736 /* ZWTestTwoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWTestTwoController.xib; sourceTree = "<group>"; };
+		C2D1E0771D75AE500019F736 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		C2D1E0781D75AE500019F736 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		C2D1E07A1D75B0E50019F736 /* UIBarButtonItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Category.h"; sourceTree = "<group>"; };
+		C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +229,10 @@
 		C2D1E04D1D758E190019F736 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C2D1E0771D75AE500019F736 /* UIView+Category.h */,
+				C2D1E0781D75AE500019F736 /* UIView+Category.m */,
+				C2D1E07A1D75B0E50019F736 /* UIBarButtonItem+Category.h */,
+				C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -219,6 +242,8 @@
 			children = (
 				C2D1E04F1D758E190019F736 /* ZWTabBarController.h */,
 				C2D1E0501D758E190019F736 /* ZWTabBarController.m */,
+				C2D1E06A1D75A72A0019F736 /* ZWNavigationController.h */,
+				C2D1E06B1D75A72A0019F736 /* ZWNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +265,12 @@
 		C2D1E0531D758E190019F736 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C2D1E06D1D75A9380019F736 /* ZWTestOneController.h */,
+				C2D1E06E1D75A9380019F736 /* ZWTestOneController.m */,
+				C2D1E06F1D75A9380019F736 /* ZWTestOneController.xib */,
+				C2D1E0721D75AA670019F736 /* ZWTestTwoController.h */,
+				C2D1E0731D75AA670019F736 /* ZWTestTwoController.m */,
+				C2D1E0741D75AA670019F736 /* ZWTestTwoController.xib */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -400,6 +431,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D1E0281D75814F0019F736 /* Assets.xcassets in Resources */,
+				C2D1E0711D75A9380019F736 /* ZWTestOneController.xib in Resources */,
+				C2D1E0761D75AA670019F736 /* ZWTestTwoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +450,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D1E06C1D75A72A0019F736 /* ZWNavigationController.m in Sources */,
+				C2D1E0701D75A9380019F736 /* ZWTestOneController.m in Sources */,
 				C2D1E05D1D758E190019F736 /* ZWTabBarController.m in Sources */,
+				C2D1E0791D75AE500019F736 /* UIView+Category.m in Sources */,
 				C2D1E0601D759F570019F736 /* ZWDiscoverController.m in Sources */,
 				C2D1E0201D75814F0019F736 /* AppDelegate.m in Sources */,
 				C2D1E01D1D75814F0019F736 /* main.m in Sources */,
 				C2D1E0691D759FE10019F736 /* ZWProfileController.m in Sources */,
+				C2D1E07C1D75B0E50019F736 /* UIBarButtonItem+Category.m in Sources */,
+				C2D1E0751D75AA670019F736 /* ZWTestTwoController.m in Sources */,
 				C2D1E0661D759FC60019F736 /* ZWMessageController.m in Sources */,
 				C2D1E0631D759F8C0019F736 /* ZWHomeController.m in Sources */,
 			);

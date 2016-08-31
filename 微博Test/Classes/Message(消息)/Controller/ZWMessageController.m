@@ -7,6 +7,8 @@
 //
 
 #import "ZWMessageController.h"
+#import "ZWTestOneController.h"
+
 
 @implementation ZWMessageController
 
@@ -14,6 +16,10 @@
     [super viewDidLoad];
     //设置导航右部控件
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(composeMsg)];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 - (void)composeMsg{
     NSLog(@"composeMsg");
@@ -30,5 +36,12 @@
     NSString *context = [NSString stringWithFormat:@"message--id-%d",indexPath.row];
     cell.textLabel.text = context;
     return cell;
+}
+
+#pragma mark --实现tableviewdelegate方法
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ZWTestOneController *firstVc = [[ZWTestOneController alloc] init];
+    [self.navigationController pushViewController:firstVc animated:YES];
 }
 @end

@@ -11,4 +11,14 @@
 
 @implementation ZWProfileController
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    //设置导航右部控件
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(setting)];
+}
+
+- (void)setting{
+    NSLog(@"setting");
+}
+
 @end

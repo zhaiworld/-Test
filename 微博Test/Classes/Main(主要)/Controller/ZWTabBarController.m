@@ -11,6 +11,8 @@
 #import "ZWHomeController.h"
 #import "ZWMessageController.h"
 #import "ZWProfileController.h"
+#import "ZWNavigationController.h"
+
 
 
 @implementation ZWTabBarController
@@ -35,6 +37,7 @@
 }
 
 - (void)addChildVc:(UIViewController*)viewController title:(NSString*)title image:(NSString*)image selectedImage:(NSString*)selectedImage{
+    //设置item的文字及图片
     viewController.title = title;
     [viewController.tabBarItem setImage:[UIImage imageNamed:image]];
     [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
@@ -42,7 +45,8 @@
     NSMutableDictionary *attr = [NSMutableDictionary dictionary];
     attr[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [viewController.tabBarItem setTitleTextAttributes:attr forState:UIControlStateSelected];
-    
-    [self addChildViewController:viewController];
+    //将子控制器包装进导航控制器
+    ZWNavigationController *nav = [[ZWNavigationController alloc] initWithRootViewController:viewController];
+    [self addChildViewController:nav];
 }
 @end

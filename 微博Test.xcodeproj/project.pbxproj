@@ -23,6 +23,7 @@
 		C2D1E0761D75AA670019F736 /* ZWTestTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2D1E0741D75AA670019F736 /* ZWTestTwoController.xib */; };
 		C2D1E0791D75AE500019F736 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0781D75AE500019F736 /* UIView+Category.m */; };
 		C2D1E07C1D75B0E50019F736 /* UIBarButtonItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */; };
+		C2D1E07F1D7681EC0019F736 /* ZWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		C2D1E0781D75AE500019F736 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		C2D1E07A1D75B0E50019F736 /* UIBarButtonItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Category.h"; sourceTree = "<group>"; };
 		C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
+		C2D1E07D1D7681EC0019F736 /* ZWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSearchBar.h; sourceTree = "<group>"; };
+		C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSearchBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +281,8 @@
 		C2D1E0541D758E190019F736 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2D1E07D1D7681EC0019F736 /* ZWSearchBar.h */,
+				C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D1E07F1D7681EC0019F736 /* ZWSearchBar.m in Sources */,
 				C2D1E06C1D75A72A0019F736 /* ZWNavigationController.m in Sources */,
 				C2D1E0701D75A9380019F736 /* ZWTestOneController.m in Sources */,
 				C2D1E05D1D758E190019F736 /* ZWTabBarController.m in Sources */,

@@ -24,6 +24,8 @@
 		C2D1E0791D75AE500019F736 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0781D75AE500019F736 /* UIView+Category.m */; };
 		C2D1E07C1D75B0E50019F736 /* UIBarButtonItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */; };
 		C2D1E07F1D7681EC0019F736 /* ZWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */; };
+		C2D1E0821D7808020019F736 /* ZWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0811D7808020019F736 /* ZWDropdownMenu.m */; };
+		C2D1E0851D78190A0019F736 /* ZWTitleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D1E0841D78190A0019F736 /* ZWTitleController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		C2D1E07B1D75B0E50019F736 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
 		C2D1E07D1D7681EC0019F736 /* ZWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSearchBar.h; sourceTree = "<group>"; };
 		C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSearchBar.m; sourceTree = "<group>"; };
+		C2D1E0801D7808010019F736 /* ZWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWDropdownMenu.h; sourceTree = "<group>"; };
+		C2D1E0811D7808020019F736 /* ZWDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWDropdownMenu.m; sourceTree = "<group>"; };
+		C2D1E0831D78190A0019F736 /* ZWTitleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTitleController.h; sourceTree = "<group>"; };
+		C2D1E0841D78190A0019F736 /* ZWTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTitleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +218,8 @@
 		C2D1E04B1D758E190019F736 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2D1E0831D78190A0019F736 /* ZWTitleController.h */,
+				C2D1E0841D78190A0019F736 /* ZWTitleController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +291,8 @@
 			children = (
 				C2D1E07D1D7681EC0019F736 /* ZWSearchBar.h */,
 				C2D1E07E1D7681EC0019F736 /* ZWSearchBar.m */,
+				C2D1E0801D7808010019F736 /* ZWDropdownMenu.h */,
+				C2D1E0811D7808020019F736 /* ZWDropdownMenu.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -461,10 +471,12 @@
 				C2D1E05D1D758E190019F736 /* ZWTabBarController.m in Sources */,
 				C2D1E0791D75AE500019F736 /* UIView+Category.m in Sources */,
 				C2D1E0601D759F570019F736 /* ZWDiscoverController.m in Sources */,
+				C2D1E0851D78190A0019F736 /* ZWTitleController.m in Sources */,
 				C2D1E0201D75814F0019F736 /* AppDelegate.m in Sources */,
 				C2D1E01D1D75814F0019F736 /* main.m in Sources */,
 				C2D1E0691D759FE10019F736 /* ZWProfileController.m in Sources */,
 				C2D1E07C1D75B0E50019F736 /* UIBarButtonItem+Category.m in Sources */,
+				C2D1E0821D7808020019F736 /* ZWDropdownMenu.m in Sources */,
 				C2D1E0751D75AA670019F736 /* ZWTestTwoController.m in Sources */,
 				C2D1E0661D759FC60019F736 /* ZWMessageController.m in Sources */,
 				C2D1E0631D759F8C0019F736 /* ZWHomeController.m in Sources */,

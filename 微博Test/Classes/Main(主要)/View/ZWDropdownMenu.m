@@ -71,7 +71,9 @@
     self.containerView.centerX = CGRectGetMidX(newFrame);
     self.containerView.y = CGRectGetMaxY(newFrame);
 }
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self dismiss];
+}
 -(void)dismiss{
     [self removeFromSuperview];
 }

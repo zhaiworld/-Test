@@ -28,7 +28,7 @@
     UIButton *titleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [titleBtn setTitle:@"首页" forState:UIControlStateNormal];
     [titleBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
-    [titleBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateHighlighted];
+    [titleBtn setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
     [titleBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     titleBtn.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     //添加点击事件

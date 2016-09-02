@@ -12,9 +12,13 @@
 #import "ZWMessageController.h"
 #import "ZWProfileController.h"
 #import "ZWNavigationController.h"
+#import "UIView+Category.h"
+#import "ZWTabBar.h"
 
 
+@interface ZWTabBarController() <ZWTabBarDelegate>
 
+@end
 @implementation ZWTabBarController
 
 - (void)viewDidLoad
@@ -34,6 +38,12 @@
     ZWProfileController *profile = [[ZWProfileController alloc] init];
     [self addChildVc:profile title:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
     
+    //修改系统tabar为自定义
+    ZWTabBar *tabBar = [[ZWTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKey:@"tabBar"];
+    
+    
 }
 
 - (void)addChildVc:(UIViewController*)viewController title:(NSString*)title image:(NSString*)image selectedImage:(NSString*)selectedImage{
@@ -48,5 +58,14 @@
     //将子控制器包装进导航控制器
     ZWNavigationController *nav = [[ZWNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:nav];
+}
+
+#pragma mark -- 实现<ZWTabBarDelegate>方法
+-(void)tabBarDidClickPlusBtn:(ZWTabBar *)tabBar{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.title = @"发微博界面";
+    vc.view.backgroundColor = [UIColor greenColor];
+    [self presentViewController:vc animated:YES completion:nil];
+    //    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

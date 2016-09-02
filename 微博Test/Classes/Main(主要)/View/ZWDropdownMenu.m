@@ -70,11 +70,19 @@
     CGRect newFrame = [from.superview convertRect:from.frame toView:window];
     self.containerView.centerX = CGRectGetMidX(newFrame);
     self.containerView.y = CGRectGetMaxY(newFrame);
+    //通知代理，标题为显示状态
+    if ([self.delegate respondsToSelector:@selector(dropdownMenuDidShow:)]) {
+        [self.delegate dropdownMenuDidShow:self];
+    }
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self dismiss];
 }
 -(void)dismiss{
     [self removeFromSuperview];
+    //通知代理，标题为收起状态
+    if ([self.delegate respondsToSelector:@selector(dropdownMenuDidDismiss:)]) {
+        [self.delegate dropdownMenuDidDismiss:self];
+    }
 }
 @end

@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZWDropdownMenu;
+@protocol ZWDropdownMenuDelegate <NSObject>
+
+@optional
+-(void)dropdownMenuDidShow:(ZWDropdownMenu*)menu;
+-(void)dropdownMenuDidDismiss:(ZWDropdownMenu*)menu;
+
+@end
 @interface ZWDropdownMenu : UIView
+@property (nonatomic, weak) id<ZWDropdownMenuDelegate> delegate;
 //内容
 @property (nonatomic, strong) UIView *content;
 //内容控制器

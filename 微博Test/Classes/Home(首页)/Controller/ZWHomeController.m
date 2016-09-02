@@ -13,7 +13,9 @@
 #import "ZWTitleController.h"
 
 
+@interface ZWHomeController()<ZWDropdownMenuDelegate>
 
+@end
 @implementation ZWHomeController
 
 -(void)viewDidLoad{
@@ -51,6 +53,7 @@
 - (void)clickTitle:(UIButton *)btn{
     //创建下拉控件
     ZWDropdownMenu *menu = [ZWDropdownMenu menu];
+    menu.delegate = self;
     //创建要添加的内容
     ZWTitleController *contentVc = [[ZWTitleController alloc] init];
     contentVc.view.width = 150;
@@ -59,6 +62,15 @@
     //显示下拉控件
     [menu showFrom:btn];
     
+}
+#pragma mark --ZWDropdownMenuDelegate
+-(void)dropdownMenuDidShow:(ZWDropdownMenu *)menu{
+    UIButton *titleBtn = (UIButton*)self.navigationItem.titleView;
+    titleBtn.selected = YES;
+}
+-(void)dropdownMenuDidDismiss:(ZWDropdownMenu *)menu{
+    UIButton *titleBtn = (UIButton*)self.navigationItem.titleView;
+    titleBtn.selected = NO;
 }
 - (void)searchFriend{
     NSLog(@"searchFriend");
